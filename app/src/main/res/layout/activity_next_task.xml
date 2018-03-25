@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#42b3f4"
+    tools:context="com.example.reyna.alzreminder.nextTaskActivity">
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Task"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:padding="15dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/tulis"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/nt"
+            android:hint="What will You Do?"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        >
+        <EditText
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Description.."
+            android:id="@+id/isi"
+            android:textColorHint="#42b3f4"
+            android:backgroundTint="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:id="@+id/date"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputDate"
+            android:clickable="true"
+            android:hint="Select Date"
+            android:layout_alignParentRight="true"
+            android:ems="8"
+            android:padding="15dp"
+            android:textColorHint="@android:color/white"
+            android:focusable="false"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:id="@+id/time"
+            android:layout_below="@id/date"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputTime"
+            android:clickable="true"
+            android:hint="Select Time"
+            android:layout_below="@id/inputDate"
+            android:layout_alignParentRight="true"
+            android:ems="8"
+            android:padding="15dp"
+            android:textColorHint="@android:color/white"
+            android:focusable="false"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/save"
+            android:background="#4280f4"
+            android:layout_below="@id/inputTime"
+            android:layout_alignParentRight="true"
+            android:text="save"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+</LinearLayout>

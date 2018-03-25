@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffc600">
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sekarang Hari Apa?"
+            android:layout_alignParentBottom="true"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGrp"
+            android:padding="30dp">
+            <RadioButton
+                android:text="Senin"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton"
+                android:onClick="onRadioButton"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                />
+            <RadioButton
+                android:text="Rabu"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton2"
+                android:onClick="onRadioButton"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                />
+            <RadioButton
+                android:text="Kamis"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton3"
+                android:onClick="onRadioButton"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</LinearLayout>
